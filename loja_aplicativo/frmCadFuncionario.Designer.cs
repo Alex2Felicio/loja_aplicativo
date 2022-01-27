@@ -32,12 +32,14 @@ namespace loja_aplicativo
             this.txbCadNome = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button6 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -50,7 +52,7 @@ namespace loja_aplicativo
             this.txbCadTelFun = new System.Windows.Forms.TextBox();
             this.txbCadRGFun = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -58,6 +60,7 @@ namespace loja_aplicativo
             // 
             // txbCadNome
             // 
+            this.txbCadNome.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txbCadNome.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txbCadNome.Location = new System.Drawing.Point(104, 34);
             this.txbCadNome.Name = "txbCadNome";
@@ -78,10 +81,22 @@ namespace loja_aplicativo
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(84)))), ((int)(((byte)(124)))));
+            this.panel1.Controls.Add(this.label7);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(802, 43);
             this.panel1.TabIndex = 2;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(3, 9);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(203, 25);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Cadastro Funcionário";
             // 
             // label1
             // 
@@ -157,6 +172,15 @@ namespace loja_aplicativo
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dados Cadastrais";
             // 
+            // button6
+            // 
+            this.button6.Image = global::loja_aplicativo.Properties.Resources.adicionar_botao;
+            this.button6.Location = new System.Drawing.Point(371, 198);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(33, 32);
+            this.button6.TabIndex = 15;
+            this.button6.UseVisualStyleBackColor = true;
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.button5);
@@ -228,6 +252,7 @@ namespace loja_aplicativo
             // 
             // comboBox1
             // 
+            this.comboBox1.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(104, 202);
@@ -253,6 +278,7 @@ namespace loja_aplicativo
             // 
             // txbCadRGFun
             // 
+            this.txbCadRGFun.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txbCadRGFun.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txbCadRGFun.Location = new System.Drawing.Point(103, 71);
             this.txbCadRGFun.Name = "txbCadRGFun";
@@ -269,14 +295,6 @@ namespace loja_aplicativo
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(371, 202);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(33, 25);
-            this.button6.TabIndex = 15;
-            this.button6.UseVisualStyleBackColor = true;
-            // 
             // frmCadFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -289,6 +307,8 @@ namespace loja_aplicativo
             this.Name = "frmCadFuncionario";
             this.Text = "BELSI - CADASTRO FUNCIONARIO";
             this.Load += new System.EventHandler(this.frmCadFuncionario_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -321,6 +341,7 @@ namespace loja_aplicativo
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.MaskedTextBox mtbCadNascimento;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Label label7;
     }
 }
 

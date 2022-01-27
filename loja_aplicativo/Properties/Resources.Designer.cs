@@ -63,6 +63,16 @@ namespace loja_aplicativo.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap adicionar_botao {
+            get {
+                object obj = ResourceManager.GetObject("adicionar-botao", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap AnyConv_com__Login {
             get {
                 object obj = ResourceManager.GetObject("AnyConv.com__Login", resourceCulture);

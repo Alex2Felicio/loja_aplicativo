@@ -29,13 +29,15 @@ namespace loja_aplicativo
                 
                 var std = new TabFuncionario()
                 {
+                  
                     
                     NmFuncionario = txbCadNome.Text,
-                    NrRg = txbCadRGFun.Text,
-                    DsEmail = TxbCadEmailFun.Text,
-                    NrTelefone = txbCadTelFun.Text,
-                    DsDataNascimento = DateTime.Parse(mtbCadNascimento.Text)
-                    
+                    NrRg = txbCadRGFun.Text,                   
+                   // DsEmail = TxbCadEmailFun.Text,
+                    //NrTelefone = txbCadTelFun.Text,
+                    //DsDataNascimento = DateTime.Parse(mtbCadNascimento.Text)
+                    IdTipoFuncionario= comboBox1.SelectedIndex
+
 
                 };
                 context.TabFuncionarios.Add(std);
@@ -66,7 +68,7 @@ namespace loja_aplicativo
 
         private void txbCadNome_TextChanged(object sender, EventArgs e)
         {
-
+           
         }
     }
 }

@@ -18,7 +18,7 @@ namespace loja_aplicativo
         Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmCadFuncionario());
+            Application.Run(new frmPesquisaFuncionario());
             //Application.Run(new frmLogin());
 
 

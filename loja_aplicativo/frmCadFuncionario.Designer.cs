@@ -61,6 +61,7 @@ namespace loja_aplicativo
             // txbCadNome
             // 
             this.txbCadNome.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.txbCadNome.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txbCadNome.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txbCadNome.Location = new System.Drawing.Point(104, 34);
             this.txbCadNome.Name = "txbCadNome";

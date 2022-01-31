@@ -29,6 +29,7 @@ namespace loja_aplicativo
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadFuncionario));
             this.txbCadNome = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -133,7 +134,7 @@ namespace loja_aplicativo
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(238, 75);
+            this.label4.Location = new System.Drawing.Point(274, 75);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(130, 17);
             this.label4.TabIndex = 6;
@@ -234,11 +235,12 @@ namespace loja_aplicativo
             // mtbCadNascimento
             // 
             this.mtbCadNascimento.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.mtbCadNascimento.Location = new System.Drawing.Point(371, 72);
+            this.mtbCadNascimento.Location = new System.Drawing.Point(400, 72);
             this.mtbCadNascimento.Mask = "00/00/0000";
             this.mtbCadNascimento.Name = "mtbCadNascimento";
-            this.mtbCadNascimento.Size = new System.Drawing.Size(120, 25);
+            this.mtbCadNascimento.Size = new System.Drawing.Size(91, 25);
             this.mtbCadNascimento.TabIndex = 13;
+            this.mtbCadNascimento.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.mtbCadNascimento.ValidatingType = typeof(System.DateTime);
             // 
             // label6
@@ -254,6 +256,7 @@ namespace loja_aplicativo
             // comboBox1
             // 
             this.comboBox1.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(104, 202);
@@ -305,6 +308,7 @@ namespace loja_aplicativo
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmCadFuncionario";
             this.Text = "BELSI - CADASTRO FUNCIONARIO";
             this.Load += new System.EventHandler(this.frmCadFuncionario_Load);

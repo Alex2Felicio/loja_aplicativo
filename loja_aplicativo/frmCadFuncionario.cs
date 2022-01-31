@@ -21,31 +21,74 @@ namespace loja_aplicativo
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
-                using (var context = new DB_LOJAContext())
+            try
             {
-                
 
-                
-                var std = new TabFuncionario()
+            
+            string email;
+            string rg;
+            string tel;
+
+
+            if (TxbCadEmailFun.Text == null)
+            {
+                email = null;
+            }
+            else
+            {
+                email = TxbCadEmailFun.Text;
+            }
+
+            while (txbCadRGFun.Text == null)
+            {
+                string message = "Favor preencher o campo: RG";
+                string title = "BELSI - Loja";
+                MessageBox.Show(message, title, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            rg = txbCadRGFun.Text;
+
+            if (txbCadTelFun.Text == null)
+            {
+                tel = null;
+            }
+            else
+            {
+                tel = txbCadTelFun.Text;
+            }
+
+                using (var context = new DB_LOJAContext())
                 {
-                  
-                    
-                    NmFuncionario = txbCadNome.Text,
-                    NrRg = txbCadRGFun.Text,                   
-                   // DsEmail = TxbCadEmailFun.Text,
-                    //NrTelefone = txbCadTelFun.Text,
-                    //DsDataNascimento = DateTime.Parse(mtbCadNascimento.Text)
-                    IdTipoFuncionario= comboBox1.SelectedIndex
 
 
-                };
-                context.TabFuncionarios.Add(std);
 
-                // or
-                // context.Add<Student>(std);
+                    var std = new TabFuncionario()
+                    {
 
-                context.SaveChanges();
+
+                        NmFuncionario = txbCadNome.Text,
+                        NrRg = rg,
+                        DsEmail = email,
+                        NrTelefone = tel,
+                        DsDataNascimento = DateTime.Parse(mtbCadNascimento.Text),
+                        IdTipoFuncionario = comboBox1.SelectedIndex + 1
+
+
+                    };
+                    context.TabFuncionarios.Add(std);
+
+                    // or
+                    // context.Add<Student>(std);
+
+                    context.SaveChanges();
+                }
+            }
+            catch(FormatException ex)
+            {
+                MessageBox.Show(ex.Message,"Erro");
+            }
+            finally
+            {
+                MessageBox.Show("teste de finally");
             }
         }
 

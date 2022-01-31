@@ -174,5 +174,12 @@ namespace loja_aplicativo
         {
 
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+
+        {
+            lblData.Text = DateTime.Now.ToString("dd/MM/yyyy");
+            lblHora.Text= DateTime.Now.ToString("HH:mm");
+        }
     }
 }

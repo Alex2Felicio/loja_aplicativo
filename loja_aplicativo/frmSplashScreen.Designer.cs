@@ -30,6 +30,7 @@ namespace loja_aplicativo
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSplashScreen));
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pbCarregar = new System.Windows.Forms.ProgressBar();
             this.SuspendLayout();
@@ -54,6 +55,7 @@ namespace loja_aplicativo
             this.BackgroundImage = global::loja_aplicativo.Properties.Resources.BELSI_LOGO_SPLASH;
             this.ClientSize = new System.Drawing.Size(454, 226);
             this.Controls.Add(this.pbCarregar);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmSplashScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmSplashScreen";

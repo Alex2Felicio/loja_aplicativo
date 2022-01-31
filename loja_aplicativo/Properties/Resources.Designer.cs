@@ -113,6 +113,16 @@ namespace loja_aplicativo.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cartao_de_credito {
+            get {
+                object obj = ResourceManager.GetObject("cartao-de-credito", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap codigo_de_barras {
             get {
                 object obj = ResourceManager.GetObject("codigo-de-barras", resourceCulture);
@@ -133,9 +143,39 @@ namespace loja_aplicativo.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dinheiro {
+            get {
+                object obj = ResourceManager.GetObject("dinheiro", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dinheiro__1_ {
+            get {
+                object obj = ResourceManager.GetObject("dinheiro (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap lupa {
             get {
                 object obj = ResourceManager.GetObject("lupa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pagamento_sem_dinheiro {
+            get {
+                object obj = ResourceManager.GetObject("pagamento-sem-dinheiro", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -186,6 +226,27 @@ namespace loja_aplicativo.Properties {
         internal static System.Drawing.Bitmap seta_esquerda__1_ {
             get {
                 object obj = ResourceManager.GetObject("seta-esquerda (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Tudo_o_que_sabemos_sobre_PIX_plataforma_de_pagamentos_instantâneos_do_Banco_Central {
+            get {
+                object obj = ResourceManager.GetObject("Tudo-o-que-sabemos-sobre-PIX-plataforma-de-pagamentos-instantâneos-do-Banco-Centr" +
+                        "al", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap visto {
+            get {
+                object obj = ResourceManager.GetObject("visto", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

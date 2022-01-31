@@ -29,6 +29,8 @@ namespace loja_aplicativo
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadVendas));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -47,6 +49,11 @@ namespace loja_aplicativo
             this.button1 = new System.Windows.Forms.Button();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.imgPix = new System.Windows.Forms.PictureBox();
+            this.imgDebito = new System.Windows.Forms.PictureBox();
+            this.imgDinheiro = new System.Windows.Forms.PictureBox();
+            this.imgCartao = new System.Windows.Forms.PictureBox();
+            this.button8 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button7 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
@@ -64,13 +71,19 @@ namespace loja_aplicativo
             this.label11 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgPix)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgDebito)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgDinheiro)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgCartao)).BeginInit();
             this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -174,6 +187,7 @@ namespace loja_aplicativo
             this.button3.Size = new System.Drawing.Size(37, 37);
             this.button3.TabIndex = 4;
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label2
             // 
@@ -225,7 +239,7 @@ namespace loja_aplicativo
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(99, 46);
             this.button1.TabIndex = 10;
-            this.button1.Text = "Salvar";
+            this.button1.Text = "Finalizar";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // textBox3
@@ -239,6 +253,11 @@ namespace loja_aplicativo
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.imgPix);
+            this.groupBox3.Controls.Add(this.imgDebito);
+            this.groupBox3.Controls.Add(this.imgDinheiro);
+            this.groupBox3.Controls.Add(this.imgCartao);
+            this.groupBox3.Controls.Add(this.button8);
             this.groupBox3.Controls.Add(this.comboBox1);
             this.groupBox3.Controls.Add(this.button7);
             this.groupBox3.Controls.Add(this.label9);
@@ -257,24 +276,79 @@ namespace loja_aplicativo
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Informações";
             // 
+            // imgPix
+            // 
+            this.imgPix.Image = global::loja_aplicativo.Properties.Resources.pagamento_sem_dinheiro;
+            this.imgPix.Location = new System.Drawing.Point(149, 318);
+            this.imgPix.Name = "imgPix";
+            this.imgPix.Size = new System.Drawing.Size(37, 35);
+            this.imgPix.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.imgPix.TabIndex = 29;
+            this.imgPix.TabStop = false;
+            this.imgPix.Visible = false;
+            // 
+            // imgDebito
+            // 
+            this.imgDebito.Image = global::loja_aplicativo.Properties.Resources.visto;
+            this.imgDebito.Location = new System.Drawing.Point(149, 324);
+            this.imgDebito.Name = "imgDebito";
+            this.imgDebito.Size = new System.Drawing.Size(37, 23);
+            this.imgDebito.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.imgDebito.TabIndex = 28;
+            this.imgDebito.TabStop = false;
+            this.imgDebito.Visible = false;
+            // 
+            // imgDinheiro
+            // 
+            this.imgDinheiro.Image = global::loja_aplicativo.Properties.Resources.dinheiro;
+            this.imgDinheiro.Location = new System.Drawing.Point(149, 324);
+            this.imgDinheiro.Name = "imgDinheiro";
+            this.imgDinheiro.Size = new System.Drawing.Size(37, 23);
+            this.imgDinheiro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.imgDinheiro.TabIndex = 27;
+            this.imgDinheiro.TabStop = false;
+            this.imgDinheiro.Visible = false;
+            // 
+            // imgCartao
+            // 
+            this.imgCartao.Image = global::loja_aplicativo.Properties.Resources.cartao_de_credito;
+            this.imgCartao.Location = new System.Drawing.Point(149, 324);
+            this.imgCartao.Name = "imgCartao";
+            this.imgCartao.Size = new System.Drawing.Size(37, 23);
+            this.imgCartao.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.imgCartao.TabIndex = 26;
+            this.imgCartao.TabStop = false;
+            this.imgCartao.Visible = false;
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(6, 193);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(223, 32);
+            this.button8.TabIndex = 25;
+            this.button8.Text = "Remover Item";
+            this.button8.UseVisualStyleBackColor = true;
+            // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Dinheiro",
             "Cartão de Credito",
             "Cartão de Debito",
             "Pix"});
-            this.comboBox1.Location = new System.Drawing.Point(6, 302);
+            this.comboBox1.Location = new System.Drawing.Point(6, 324);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(137, 23);
             this.comboBox1.TabIndex = 24;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(143, 211);
+            this.button7.Location = new System.Drawing.Point(140, 233);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(86, 34);
+            this.button7.Size = new System.Drawing.Size(89, 34);
             this.button7.TabIndex = 23;
             this.button7.Text = "Aplicar";
             this.button7.UseVisualStyleBackColor = true;
@@ -283,16 +357,16 @@ namespace loja_aplicativo
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(6, 219);
+            this.label9.Location = new System.Drawing.Point(6, 241);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(66, 17);
+            this.label9.Size = new System.Drawing.Size(81, 17);
             this.label9.TabIndex = 22;
-            this.label9.Text = "Desconto:";
+            this.label9.Text = "Desconto %:";
             // 
             // textBox7
             // 
             this.textBox7.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox7.Location = new System.Drawing.Point(83, 214);
+            this.textBox7.Location = new System.Drawing.Point(87, 236);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(51, 27);
             this.textBox7.TabIndex = 21;
@@ -321,7 +395,7 @@ namespace loja_aplicativo
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(6, 271);
+            this.label6.Location = new System.Drawing.Point(6, 293);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(137, 17);
             this.label6.TabIndex = 18;
@@ -445,8 +519,9 @@ namespace loja_aplicativo
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmCadVendas";
-            this.Text = "frmCadVendas";
+            this.Text = "BELSI - Venda";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -456,8 +531,13 @@ namespace loja_aplicativo
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgPix)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgDebito)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgDinheiro)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgCartao)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -499,5 +579,11 @@ namespace loja_aplicativo
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.PictureBox imgCartao;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.BindingSource bindingSource1;
+        private System.Windows.Forms.PictureBox imgPix;
+        private System.Windows.Forms.PictureBox imgDebito;
+        private System.Windows.Forms.PictureBox imgDinheiro;
     }
 }

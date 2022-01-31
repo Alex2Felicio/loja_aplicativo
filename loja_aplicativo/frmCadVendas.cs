@@ -26,5 +26,47 @@ namespace loja_aplicativo
         {
             
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox1.SelectedIndex == 0)
+            {
+                imgDinheiro.Visible = true;
+                imgCartao.Visible = false;
+                imgDebito.Visible = false;
+                imgPix.Visible = false;
+            } else if (comboBox1.SelectedIndex == 1)
+            {
+                imgDinheiro.Visible = false;
+                imgCartao.Visible = true;
+                imgDebito.Visible = false;
+                imgPix.Visible = false;
+            }else if (comboBox1.SelectedIndex == 2)
+            {
+                imgDinheiro.Visible = false;
+                imgCartao.Visible = false;
+                imgDebito.Visible = true;
+                imgPix.Visible = false;
+            }else if(comboBox1.SelectedIndex == 3)
+            {
+                imgDinheiro.Visible = false;
+                imgCartao.Visible = false;
+                imgDebito.Visible = false;
+                imgPix.Visible = true;
+            }
+            else
+            {
+                imgDinheiro.Visible = false;
+                imgCartao.Visible = false;
+                imgDebito.Visible = false;
+                imgPix.Visible = false;
+            }
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+           
+        }
     }
 }

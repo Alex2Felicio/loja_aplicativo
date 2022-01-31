@@ -118,43 +118,61 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="registro (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\registro (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="configuracao" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\configuracao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="seta-esquerda (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\seta-esquerda (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="registro1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\registro1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BELSI LOGO SPLASH" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BELSI LOGO SPLASH.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="codigo-de-barras" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\codigo-de-barras.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="seta-direita (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\seta-direita (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="BELSI-Splash" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BELSI-Splash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="registro" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\registro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BELSI-Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BELSI-Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="lupa" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lupa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="seta-direita (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\seta-direita (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="codigo-de-barras" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\codigo-de-barras.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="registro1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\registro1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="registro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\registro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cartao-de-credito" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cartao-de-credito.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="visto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\visto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dinheiro (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dinheiro (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AnyConv.com__Login" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AnyConv.com__Login.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="configuracao" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\configuracao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lupa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lupa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tudo-o-que-sabemos-sobre-PIX-plataforma-de-pagamentos-instantâneos-do-Banco-Central" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tudo-o-que-sabemos-sobre-PIX-plataforma-de-pagamentos-instantâneos-do-Banco-Central.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="seta-esquerda (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\seta-esquerda (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="adicionar-botao" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\adicionar-botao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dinheiro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dinheiro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="registro (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\registro (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BELSI LOGO SPLASH" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BELSI LOGO SPLASH.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pagamento-sem-dinheiro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pagamento-sem-dinheiro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
